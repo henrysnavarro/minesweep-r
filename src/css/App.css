@@ -1,0 +1,250 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #222;
+}
+
+h1, p {
+  margin: 10px 0 10px 0;
+}
+
+.App {
+  text-align: center;
+  background-color: transparent;
+}
+
+.logoReact {
+  animation: logoReact-spin infinite 12s linear;
+  height: 30px;
+  position: absolute;
+  left: 8px;
+  top: 14px;
+}
+
+.App-header {
+  background-color: transparent;
+  height: 80px;
+  padding: 20px;
+  color: white;
+}
+
+.appTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.appDesc, p.footer {
+  font-size: .85em;
+  font-weight: lighter;
+  color: #fff;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+p.footer {
+  color: #888;
+}
+
+@keyframes logoReact-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.icon {
+  width: 22px;
+}
+
+div.logoHolder {
+  width: 60px;
+  height: 60px;
+  background-color: #aaa;
+  border-radius: 10px;
+  position: relative;
+  margin: auto;
+  display: inline-block;
+}
+
+img.logoMine {
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+
+div.score {
+  background-color: #777;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #999;
+}
+
+div.score > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+div.score > img.icon {
+  margin: 0;
+}
+
+div.time, div.minesLeft {
+  font-weight: lighter;
+}
+
+div.time {
+  text-align: right;
+  margin-right: 5px;
+}
+
+div.minesLeft {
+  text-align: left;
+  margin-left: 5px;
+}
+
+div.minesLeft, div.time, div.gameState {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+
+img.gameState {
+  width: 40px;
+  margin: 0 25px;
+  border-radius: 20px;
+}
+
+img.gameon {
+  background-color: #ff5;
+}
+
+img.gamewon {
+  background-color: #5f5;
+}
+
+img.gameover {
+  background-color: #f55;
+}
+
+div.game {
+  background-color: transparent;
+}
+
+div.board {
+  background-color: #888;
+  padding: 10px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+div.boardRow {
+  display: block;
+  height: 30px;
+}
+
+div.cell {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 0.5px solid #777;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  display: inline-block;
+}
+
+div.mineShell {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;	
+}
+
+div.mineShell > img, div.cellFlag > img {
+  margin-top: 4px;
+}
+
+div.steppedOn {
+  background-color: #f00;
+}
+
+div.mineRevealed {
+  background-color: #0f0;
+}
+
+div.adjacentCount {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+}
+	
+div.cellCover {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  border-radius: 3px;
+  background-color: rgba(160, 160, 160, 1);
+  top: 2px;
+  left: 2px;	
+}
+
+div.cellFlag {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;	
+}
+
+div.brandTextHolder {
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  height: 60px;
+  text-align: left;
+}
+
+div.brandContainer {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.cellOpened {
+  opacity: 0;
+}
+
+div.cellOpenedfade {
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+div.cellOpenedpull {
+  -webkit-transition: height 0.2s ease-in-out;
+  -moz-transition: height 0.2s ease-in-out;
+  -ms-transition: height 0.2s ease-in-out;
+  -o-transition: height 0.2s ease-in-out;
+  height: 0;
+}
+
