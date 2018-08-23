@@ -1,6 +1,6 @@
 ![](minesweepR-screenshot.png =300x600 )
 
-<img src="minesweepR-screenshot.png" height="500px" width="250px">
+<img src="minesweepR-screenshot.png" height="500px" width="300px">
 
 
 ## OVERVIEW
