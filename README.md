@@ -1,5 +1,8 @@
 ![](minesweepR-screenshot.png =300x600 )
 
+<img src="minesweepR-screenshot.png" height="500px" width="250px">
+
+
 ## OVERVIEW
 
 This project is an implementationof the Minesweeper Game using ReactJS, and the [Create React App](https://github.com/facebookincubator/create-react-app) application starter kit.
