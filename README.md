@@ -1,4 +1,4 @@
-![](minesweepR-screenshot.png =300x)
+![](minesweepR-screenshot.png =300x600 )
 
 ## OVERVIEW
 
